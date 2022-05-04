@@ -1,0 +1,77 @@
+
+		body {
+			background-image: url('images/background.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.container {
+			display: block;
+			height: 100vh;
+			
+		}
+
+		.box {
+			display: flex;
+			flex-direction: column;
+			background-color: rgb(255, 255, 255);
+			justify-content: center;
+			
+			margin: 100px auto;
+			border-color: aqua;
+			border-style: solid;
+			opacity: 0.8;
+		}
+
+		.logo {
+			max-height: 15vh;
+			margin: 0vh auto;
+			width: 100x;
+		}
+
+		.box-item {
+			width: 30vh;
+		}
+
+		.form-horizontal {
+			margin: 0px auto;
+		}
+#header{
+    background-color:turquoise;
+    height: 100px;
+}
+#menu{
+    background: grey;
+    height: 30px;
+}
+#main_content{
+    background: pink;
+}
+#footer{
+    background: red;
+    height: 150px;
+}
+ 
+#left_sidebar{
+    float:left;
+    width: 300px;
+    height: 400px;
+    background: blue;
+}
+ 
+#right_sidebar{
+    float:right;
+    width: 300px;
+    height: 400px;
+    background: orange;
+}
+ 
+#content{
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 300px;
+    background: #fff
+}

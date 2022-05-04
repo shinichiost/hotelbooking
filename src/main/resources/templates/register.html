@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns=http://www.w3.org/1999/xhtml xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>hotel</title>
+	<link rel="stylesheet" th:href="@{/style.css}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container box" style="height : 90vh;width: 400px;margin:10px auto;">
+		<img class="logo img-rounded" src="images/logo.png" alt="">
+
+		<div class="pt-4 pb-2">
+			<h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
+			<p class="text-center small">Enter your personal details to create account</p>
+		</div>
+		<form class="form-horizontal">
+			<label class="control-label col-2">Username</label><br>
+			<input class="box-item form-control" type="text" id="username" name="username"
+				placeholder="Enter username"><br>
+			<label class=" col-2">Your Email</label><br>
+			<input class="box-item form-control" type="email" id="email" name="email" placeholder="Enter Email"><br>
+			<label class=" col-2">Your Password</label><br>
+			<input class="box-item form-control" type="password" id="pass" name="pass" placeholder="Enter password"><br>
+			<label class=" col-2">Your Birthday</label><br>
+			<input class="box-item form-control" type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy"><br>
+			<label class="control-label col-2">Phone</label><br>
+			<input class="box-item form-control" type="tel" id="phone" name="phone"
+				placeholder="Enter phone number"><br>
+			<div class="col-12 ">
+				<button class="btn btn-primary w-100 box-item" type="submit">Sign up</button>
+			</div><br>
+
+			<div class="col-12">
+				<p class="small mb-0">Already have an account? <a href="/login">Login</a></p>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

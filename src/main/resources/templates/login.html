@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns=http://www.w3.org/1999/xhtml xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>hotel</title>
+	<link rel = "stylesheet" th:href = "@{style.css}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+	<div class="container box" style = "height: 60vh;width: 400px;">
+		<img class="logo img-rounded" src="images/logo.png" alt="">
+		<form class="form-horizontal">
+			<label class="control-label col-sm-2">Username:</label><br>
+			<input class="box-item form-control" type="text" id="username" name="username" placeholder="Enter username"><br>
+			<label class="control-label col-sm-2">Password:</label><br>
+			<input class="box-item form-control" type="password" id="pass" name="pass" placeholder="Enter password"><br>
+			<div class="col-12 ">
+				<button class="btn btn-primary w-100 box-item" type="submit">Login</button>
+			</div><br>
+			<div class="col-12">
+				<p class="small mb-0">Don't have account? <a href="/register">Create an account</a></p>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

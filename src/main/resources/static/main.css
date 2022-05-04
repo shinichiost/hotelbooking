@@ -1,0 +1,237 @@
+/* Common CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: arial;
+    background: #f6f6f6;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+/* Layout */
+#header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+}
+
+.title {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+.title:after {
+    content: "";
+    border: 1px solid #000;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+}
+
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    min-height: 600px;
+}
+#banner .form {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#banner .wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#banner .inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form ul {
+    margin: 0px auto;
+    padding: 25px 0px;
+    list-style: none;
+    background: #fff;
+    width: 80%;
+}
+
+.form ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.form input[type="text"], .form input[type="date"] {
+    height: 35px;
+    padding: 0px 15px;
+    width: 200px;
+    border: 1px solid #f0f0f0;
+    background: #f0f0f0;
+}
+
+.form input[type="text"]:focus, .form input[type="date"]:focus {
+    border: 3px solid red;
+}
+
+#main-navigation {
+    float: left;
+    width: 65%;
+    padding-top: 30px;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+#main-navigation ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+#content {
+    
+}
+
+#main {
+    
+}
+
+#footer {
+    
+}
+
+/** Specific **/
+.logo {
+	float:left;
+    height: 15vh;
+	padding:10px auto;
+}
+
+
+/**** Section1 ****/
+#section1 {
+    padding: 50px 0px;
+    text-align: center;
+}
+#section1 h2 {
+    text-transform: uppercase;
+}
+#section1 .column {
+    float: left;
+    width: 30%;
+    padding: 0px 10px;
+}
+#section1 .column img {
+    width: 100%;
+}
+#section1 .desc {
+    padding: 12px;
+    background: #fff;
+}
+#section1 .desc a {
+    text-decoration: none;
+}
+#section1 .image {
+    position: relative;
+    overflow: hidden;
+}
+#section1 .image:after {
+    content: "";
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+#section1 .image:hover:after {
+    opacity: 1;
+    bottom: 0%;
+    transition: 1s;
+}
+#section1 .image .read-more {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    top: -100%;
+}
+#section1 .read-more p {
+    font-size: 20px;
+    line-height: 24px;
+    color: red;
+    transition: 1.5s;
+}
+#section1 .image:hover .read-more {
+    opacity: 1;
+    top: 0%;
+    transition: 1.5s;
+}
+
+
+.sociable ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sociable ul li {
+    display: inline-block;
+    font-size: 20px;
+    background: red;
+    padding: 4px 0px 0px 0px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.sociable ul li.fb {
+    background: #3B5998;
+    color: #fff;
+}
+.sociable ul li.fb a {
+    color: #fff;
+}
+
+.button1 {
+    font-size: 16px;
+    min-width: 200px;
+    height: 35px;
+    background: #F8AB00;
+    border: 1px solid #F8AB00;
+    margin-top: 30px;
+    color: #fff;
+}
